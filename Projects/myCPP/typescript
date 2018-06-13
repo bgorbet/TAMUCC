@@ -1,0 +1,21 @@
+Script started on Tue 17 Jan 2012 03:43:04 PM CST
+[bgorbet@penguin myCPP]$ cd ~
+[bgorbet@penguin ~]$ cd myCPP
+[bgorbet@penguin myCPP]$ g++ alternatingSUm[Ku[Ku[K[Kum.cpp foo.[K[K[K[K-o foo
+[bgorbet@penguin myCPP]$ foo[K[K[K./foo
+Enter positive integer: -1
+1
+[bgorbet@penguin myCPP]$ ./foog++ alternatingSum.cpp -o foo
+[bgorbet@penguin myCPP]$ ./[K/foo
+Enter positive integer: 20
+21
+[bgorbet@penguin myCPP]$ Ls
+bash: Ls: command not found
+[bgorbet@penguin myCPP]$ cat file.ext
+cat: file.ext: No such file or directory
+[bgorbet@penguin myCPP]$ cat file.txt
+cat: file.txt: No such file or directory
+[bgorbet@penguin myCPP]$ car[Kt typescript
+[bgorbet@penguin myCPP]$ exit
+
+Script done on Tue 17 Jan 2012 03:47:50 PM CST
