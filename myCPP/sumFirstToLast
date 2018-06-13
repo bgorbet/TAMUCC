@@ -1,0 +1,16 @@
+int sumFirstToLast(int first, int last)
+{
+	int i;
+	int sum=0;
+	if(first<last)
+	{
+		for(i=first; i<=last; i++)
+			sum+=i;
+	}
+	else
+	{
+		for(i=first; i>=last; i--)
+			sum +=i;l
+	}
+	return sum;
+}
