@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffff">
+
+    <EditText
+        android:id="@+id/enterUnEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10" android:hint="@string/alias" android:inputType="text|textAutoComplete">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/enterUnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enterUnEditText"
+        android:layout_alignBottom="@+id/enterUnEditText"
+        android:layout_alignParentLeft="true"
+        android:text="@string/profile_unTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/profilePicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/enterUnEditText"
+        android:text="@string/profile_picTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/createProfileButton" />
+
+    <EditText
+        android:id="@+id/enterEmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/createButton"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textAutoComplete|textEmailAddress" android:hint="@string/email"/>
+
+    <TextView
+        android:id="@+id/enterEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enterEmailEditText"
+        android:layout_alignBottom="@+id/enterEmailEditText"
+        android:layout_alignParentLeft="true"
+        android:text="@string/profile_emailTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enterEmailEditText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/profile_picButton" />
+
+    <ImageView
+        android:id="@+id/createProfileImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadButton"
+        android:layout_below="@+id/profilePicTextView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pic_android" android:background="@android:color/transparent" android:contentDescription="@string/profile_pic" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+
+</RelativeLayout>

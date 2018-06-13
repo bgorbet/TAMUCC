@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffff" >
+
+    <TextView
+        android:id="@+id/viewProfileUnTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/view_profile_unTextView"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/viewProfileImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editProfileButton"
+        android:layout_below="@+id/viewProfileEmailTextView"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/profile_pic"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_android" />
+
+    <TextView
+        android:id="@+id/viewProfileEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewProfileUnTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/email"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/editProfile" />
+
+</RelativeLayout>

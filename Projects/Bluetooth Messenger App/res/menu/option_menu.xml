@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/scan"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="@string/connect" />
+    <item android:id="@+id/discoverable"
+          android:icon="@android:drawable/ic_menu_mylocation"
+          android:title="@string/discoverable" />
+    <item android:id="@+id/send_my_profile" 
+          android:title="@string/send_my_profile"
+          android:icon="@android:drawable/ic_menu_upload" />
+    <item android:id="@+id/view_my_profile" 
+          android:title="@string/view_my_profile" 
+          android:icon="@android:drawable/ic_menu_info_details" />
+    <item android:id="@+id/close_connection" android:title="@string/close_connection" android:icon="@android:drawable/ic_menu_close_clear_cancel"></item><item android:id="@+id/close_application" android:title="@string/close_application"></item>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.tamucc.project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/android_butterfly"
+        android:label="@string/app_name" >
+        <activity
+            android:name="LaunchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+        		<action android:name="android.intent.action.SEND_MULTIPLE" />
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<data android:mimeType="*/*" />
+    		</intent-filter>
+        </activity>
+        <activity android:name="MessengerActivity"></activity>
+        <activity android:name="WelcomeActivity"></activity>
+        <activity android:name="CreateProfileActivity"></activity>
+        <activity android:name="ViewMyProfileActivity"></activity>
+        <activity android:name="BluetoothService"></activity>
+        <activity android:name=".FindDeviceActivity"></activity>
+    </application>
+
+</manifest>
